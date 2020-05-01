@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="app/css/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+		<link rel="shortcut icon" href="app/img/meteo.ico" type="image/x-icon">
+		<title>Meteo Tracker V1</title>
+	</head>
+	<body>
+		<h2 id="hour" class="ml-3 my-3 text-white"></h2>
+		<div class="d-flex flex-column align-items-center">
+			<img id="weather" alt="icon-of-weather">
+			<h1 id="temperature_label" class="text-white"></h1>
+			<h2 id="feel_like" class="text-white"></h2>
+			<h2 id="ville" class="text-white"></h2>
+			<div class="container_detail d-flex justify-content-center">
+
+				<div class="humidity-container d-flex flex-column align-items-center mr-2">
+					<img src="app/img/humidity.png" class="text-center" alt="">
+					<h3 id="humidity" class="text-white"></h3>
+				</div>
+				<div class="wind-container d-flex flex-column align-items-center">
+					<img src="app/img/wind.png" alt="">
+					<h3 id="wind" class="text-white"></h3>
+				</div>
+				<div class="pressure-container d-flex flex-column align-items-center ml-2">
+					<img src="app/img/pressure_icon.png" alt="">
+					<h3 id="pressure" class="text-white"></h3>
+        </div>
+        
+			</div>
+			<form action="" class="form-change mt-2 d-flex flex-column">
+				<input type="text" id="input-change">
+				<button id="changer" class="text-center text-white font-weight-bold text-uppercase d-inline-block" type="submit">Changer de ville</button>
+			</form>
+		</div>
+		<script src="app/js/app1.js"></script>
+	</body>

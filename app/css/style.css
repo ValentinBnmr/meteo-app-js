@@ -1,0 +1,55 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+
+body
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	height: 100%;
+	background-image: url('../img/wallpday1.jpg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+#title
+{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 3.5rem;
+}
+
+#ville
+{
+	text-transform: capitalize;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 2rem;
+}
+
+#temperature_label
+{
+	font-size: 4rem;
+}
+
+#feel_like
+{
+	font-size: 1rem;
+}
+
+#pressure #humidity #wind
+{
+	font-size: 1.5rem;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#changer
+{
+	margin: 0;
+	height: 30px;
+	background: rgba(178, 223, 251, 0.418);
+	cursor: pointer;
+	border: none;
+}
