@@ -1,55 +1,90 @@
 /* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-
-
-
-body
-{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	height: 100%;
-	background-image: url('../img/wallpday1.jpg');
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    overflow-y: hidden;
+    background-image: url('../img/wallpday1.jpg');
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 }
-
-#title
-{
-	font-family: 'Open Sans', sans-serif;
-	font-size: 3.5rem;
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
-
-#ville
-{
-	text-transform: capitalize;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 2rem;
+#date {
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 10px;
 }
-
-#temperature_label
-{
-	font-size: 4rem;
+#weather-descrip{
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 14.6px;
 }
-
-#feel_like
-{
-	font-size: 1rem;
+#temperature {
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 5rem;
+    margin: 0;
 }
-
-#pressure #humidity #wind
-{
-	font-size: 1.5rem;
-	font-family: 'Open Sans', sans-serif;
+#feel-like {
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin-bottom: 0;
 }
+#city {
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+    margin: 20px 20px;
+}
+.container-detail-weather {
+    display: flex;
+    justify-content: center;
+}
+.container-measure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container-measure h2 {
+    margin: 10px;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+}
+form {
+    display: flex;
+    flex-direction: column;
 
-#changer
-{
-	margin: 0;
-	height: 30px;
-	background: rgba(178, 223, 251, 0.418);
-	cursor: pointer;
-	border: none;
+}
+#input-change {
+    border: #fff solid 2px;
+    padding: 5px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+#btn-change {
+    padding: 20px 70px;
+    font-size: 1.2rem;
+    font-family: 'Roboto',sans-serif;
+    border: none;
+    color: #fff;
+    background: rgb(60,186,222);
+    background: linear-gradient(90deg, rgba(60,186,222,1) 0%, rgba(20,96,186,1) 50%, rgba(0,34,143,1) 100%);
+    cursor: pointer;
 }
