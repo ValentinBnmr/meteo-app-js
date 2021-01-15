@@ -1,5 +1,5 @@
 
-let city = "Paris";
+let city = "Bozel";
 meteoTemp(city);
 
 let weatherDisplay     = document.getElementById("weather-icon");
@@ -26,7 +26,7 @@ let DateLocale    = dateActu.toLocaleString('FR-fr', {
 
 });
 dateDisplay.textContent   = DateLocale;
-//Change le fond d'écran il est 20h ou plus et annulation de la condition à 7h
+//Change le fond d'écran si il est 20h ou plus et annulation de la condition à 7h
 let dateHour = dateActu.getHours();
 if (dateHour >= 20 || dateHour < 7) {
   document.querySelector('body').style.backgroundImage = "url('app/img/wallpnight.jpg')";
@@ -36,19 +36,20 @@ if (dateHour >= 20 || dateHour < 7) {
 
 //Mets à jours l'heure toute les 60/s et adapte la date et l'heure par rapport à la langue du navigateur de l'utilisateur
 function afficheHeure(){
-  dateActu = new Date();
-  let language = navigator.language;
-  DateLocale = dateActu.toLocaleString(language.toUpperCase()+"-"+language, {
-    weekday: "long",
-    day: "numeric",
-    month: "long",
-    hour: "numeric", 
-    minute: "numeric", 
-    
-    });
-  dateDisplay.textContent = DateLocale;
+  let dateActu      = new Date();
+  let DateLocale    = dateActu.toLocaleString('FR-fr', {
+
+  weekday: "long",
+  day: "numeric",
+  month: "long",
+  hour: "numeric", 
+  minute: "numeric", 
+
+});
+dateDisplay.textContent   = DateLocale;
+//Change le fond d'écran si il est 20h ou
 }
-setInterval(afficheHeure,60000);
+setInterval(afficheHeure, 60000);
 
 
 
